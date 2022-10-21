@@ -25,7 +25,7 @@ func main() {
 	handler.NewCommentHandler(r, h)
 	handler.NewSocialMediaHandler(r, h)
 
-	appPort := os.Getenv("APP_PORT")
+	appPort := os.Getenv("PORT")
 
 	if appPort == "" {
 		log.Fatal("app port didn't define")
